@@ -23,14 +23,10 @@ vim.cmd([[autocmd FileType rust hi rustFunction guifg=#9900ff ctermfg=darkmagent
 vim.cmd([[highlight MatchParen guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline]])
 
 -- Define a syntax highlight group for function calls
-vim.cmd([[
-  hi def link FunctionCall Special
-]])
+vim.cmd([[ hi def link FunctionCall Special ]])
 
 -- Define a syntax highlight group for the light blue color
-vim.cmd([[
-  hi def link FunctionCallLightBlue Special 
-]])
+vim.cmd([[ hi def link FunctionCallLightBlue Special ]])
 
 -- Define a syntax region to match function calls and highlight them with the light blue color
 vim.cmd([[
@@ -41,14 +37,10 @@ vim.cmd([[
 ]])
 
 -- Define a syntax highlight group for function calls
-vim.cmd([[
-  hi def link FunctionCall Cyan
-]])
+vim.cmd([[ hi def link FunctionCall Cyan ]])
 
 -- Define a syntax highlight group for function parameters
-vim.cmd([[
-  hi def link FunctionParam Cyan
-]])
+vim.cmd([[ hi def link FunctionParam Cyan ]])
 
 -- Define a syntax region to match function calls and highlight them
 vim.cmd([[

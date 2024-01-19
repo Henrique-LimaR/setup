@@ -5,7 +5,11 @@ require("lazy").setup({
     "romainl/Apprentice", 
     "rebelot/kanagawa.nvim",
     "nordtheme/vim",
+	"Mofiqul/vscode.nvim",
+	"nyoom-engineering/oxocarbon.nvim",
+	"projekt0n/github-nvim-theme",
 
+	"tomasiser/vim-code-dark",
 	"hrsh7th/nvim-compe",
     "hrsh7th/nvim-cmp",
 	"nvim-lualine/lualine.nvim",

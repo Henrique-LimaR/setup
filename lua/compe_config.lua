@@ -1,12 +1,6 @@
 -- lua/compe_config.lua
-
 local compe = require('compe')
-
 vim.o.completeopt = 'menu,menuone,noselect'
-
-local border_chars = {
-    {"╭", "─", "╮", "│", "╯", "─", "╰", "│"}
-}
 
 compe.setup {
     enabled = true,
@@ -21,7 +15,7 @@ compe.setup {
     max_kind_width = 100,
     max_menu_width = 100,
     documentation = true, 
-    border = border_chars[0],
+    border = {"╭", "─", "╮", "│", "╯", "─", "╰", "│"},
 
     source = {
         path = true,
@@ -30,7 +24,7 @@ compe.setup {
         nvim_lua = true,
     },
     documentation = {
-        border = border_chars[0],
+        border = {"╭", "─", "╮", "│", "╯", "─", "╰", "│"},
         winhighlight = "NormalFloat:CompeDocumentation,FloatBorder:CompeDocumentationBorder",
         max_width = 120,
         min_width = 60,
