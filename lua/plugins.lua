@@ -1,21 +1,42 @@
 require("lazy").setup({
-    "NLKNguyen/papercolor-theme",
-    "morhetz/gruvbox",
-    "dracula/vim",
-    "romainl/Apprentice", 
-    "rebelot/kanagawa.nvim",
-    "nordtheme/vim",
 	"Mofiqul/vscode.nvim",
-	"nyoom-engineering/oxocarbon.nvim",
-	"projekt0n/github-nvim-theme",
+	{
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+	},
+	{
+		'ribru17/bamboo.nvim',
+		lazy = false,
+		priority = 1000,
+		config = function()
+			require('bamboo').setup {
+			}
+			require('bamboo').load()
+		end,
+	},
 
-	"tomasiser/vim-code-dark",
-	"hrsh7th/nvim-compe",
-    "hrsh7th/nvim-cmp",
-	"nvim-lualine/lualine.nvim",
-    "preservim/nerdtree", 
-    "windwp/nvim-autopairs",
 	"neovim/nvim-lspconfig",
+	
+	"dcampos/nvim-snippy",
+	"dcampos/cmp-snippy",	
+	
+	"hrsh7th/cmp-buffer",
+	"hrsh7th/nvim-cmp",	
+	"hrsh7th/cmp-path",
+	"hrsh7th/cmp-cmdline",	
+	
+	"nvim-lualine/lualine.nvim",
+	
+	"preservim/nerdtree", 
+	{
+		'windwp/nvim-autopairs',
+		event = "InsertEnter",
+		config = true
+		-- use opts = {} for passing setup options
+		-- this is equalent to setup({}) function
+	},
 	"nvim-treesitter/nvim-treesitter"
 }, opts)
 
